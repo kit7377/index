@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Sans+KR:100,300&display=swap');
+
+html,body { 
+	width:100%;
+	height:100%;
+}
+body {
+	margin:0; padding:0;
+	color:white;
+    background-image: url("imgs/background.jpg");
+    background-size: auto auto;
+    background-repeat: no-repeat;
+}
+
+header { 
+	width:100%; height:10%;
+	position:relative;
+}
+section { 
+	width:100%; height:90%;
+	position:relative;
+}
+
+header > span { 
+	font-family:'Noto Sans KR', sans-serif; font-size:30px;
+	font-weight:100; white-space:nowrap;
+    display:inline-block; padding: 30px 0 0 60px;
+    position:relative; 
+}
+
+a { 
+	text-decoration:none;
+	color:white;
+}
+
+.main_content {
+	width:1000px; height:500px;
+	background-color:rgba(255, 255, 255, 0.7);
+	border-radius:10px;
+}
+.main_content2 { 
+	position:relative;
+}
+.main_content, .main_content2 {
+	display:inline-block;
+	position:absolute;
+	top:50%; left:50%;
+	transform:translate(-50%, -50%);
+}
+
+.main_text > h1 {
+	font-family: 'Nanum Gothic', sans-serif; font-size:70px;
+	white-space:nowrap; margin:0;
+	color:rgba(0,0,0,0.8);
+}
+.main_text > h2 {
+	font-family:'Noto Sans KR', sans-serif;
+	font-size:25px; font-weight:300;
+	position:relative; left:50px;
+	color:rgba(0,0,0,0.6);
+}
+
+.button { 
+	font-family:'Noto Sans KR', sans-serif;
+	font-weight:100; font-size:20px;
+	text-align:center;
+	margin:15px 0; padding:25px 90px;
+	background-color:rgb(47,198,0);
+	border-radius:5px;
+	position:absolute; right:0;
+	transition: background-color 0.5s;
+}
+
+.button:hover {
+	background-color:rgb(35,157,0);
+}
