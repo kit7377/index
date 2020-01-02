@@ -4,6 +4,17 @@
     <meta charset="utf-8">
     <title>취업맞춤반 만족도 조사</title>
     <link rel="stylesheet" href="guide.css">
+    <script type="text/javascript">
+      function next() {
+        var chkbox = document.getElementById('chk');
+        var chk = chkbox.checked;
+        if(chk) {
+          window.open("survey.html", "_self");
+        } else {
+          alert("약관에 동의해 주세요.");
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -15,11 +26,11 @@
         <br><br><hr>
         <span id="explanation">안녕하세요. 평촌경영고등학교 20611 김인태, 20704 구창규입니다.<br><br>본 설문은 취업맞춤반 수업에 관한 학생들의 만족도를 조사하는 목적을 가지고 있습니다. 각 문항에 대하여 매우 만족, 만족, 보통, 불만족, 매우 불만족 5가지의 답변을 선택할 수 있으며, 제출 버튼은 가장 아래에 있습니다. 총 소요시간은 2분 ~ 5분 정도로 예상됩니다. 설문에 참여해 주셔서 감사합니다.</span>
         <br><br><hr>
-        <input type="checkbox" name="" value=""><span><strong>개인정보 수집 및 이용에 동의 (필수)</strong></span>
+        <input type="checkbox" id="chk"><span><strong>개인정보 수집 및 이용에 동의 (필수)</strong></span>
 
     </section>
     <footer style="text-align: center; margin-top: 20px">
-      <a href="user.html"><input type="button" name="" value="계속" class="btn"></a>
+      <a href="javascript:next()"><input type="button" name="" value="계속" class="btn"></a>
       <br><br><br><br>
     </footer>
   </body>

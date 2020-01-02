@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="survey.css">
+    <script type="text/javascript">
+      function submit() {
+        var result = 0;
+
+        for(var i=1; i<=12; i++) {
+          var radios = document.getElementsByName('r' + String(i));
+          var check = false;
+          for(var j=0; j<radios.length;  j++) {
+            if(radios[j].checked) {
+              check = true;
+              break;
+            }
+          }
+          if(check == true) {
+            result++;
+          }
+        }
+
+        if(result == 12) {
+          alert("설문조사에 참여완료하셨습니다.");
+          window.open("end.html", "_self");
+        } else {
+          alert("모든 문항을 선택해주세요.");
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -63,35 +89,35 @@
           </tr>
           <tr>
             <td class="q">프로그램이 일정대로 운영되었다.</td>
-            <td><input type="radio" name="r5" value=""></td>
-            <td><input type="radio" name="r5" value=""></td>
-            <td><input type="radio" name="r5" value=""></td>
-            <td><input type="radio" name="r5" value=""></td>
-            <td><input type="radio" name="r5" value=""></td>
+            <td><input type="radio" name="r6" value=""></td>
+            <td><input type="radio" name="r6" value=""></td>
+            <td><input type="radio" name="r6" value=""></td>
+            <td><input type="radio" name="r6" value=""></td>
+            <td><input type="radio" name="r6" value=""></td>
           </tr>
           <tr>
             <td class="q">프로그램 내용이 취업에 관련되었다.</td>
-            <td><input type="radio" name="r6" value=""></td>
-            <td><input type="radio" name="r6" value=""></td>
-            <td><input type="radio" name="r6" value=""></td>
-            <td><input type="radio" name="r6" value=""></td>
-            <td><input type="radio" name="r6" value=""></td>
+            <td><input type="radio" name="r7" value=""></td>
+            <td><input type="radio" name="r7" value=""></td>
+            <td><input type="radio" name="r7" value=""></td>
+            <td><input type="radio" name="r7" value=""></td>
+            <td><input type="radio" name="r7" value=""></td>
           </tr>
           <tr>
             <td class="q">참여자들의 관계가 친밀했다.</td>
-            <td><input type="radio" name="r7" value=""></td>
-            <td><input type="radio" name="r7" value=""></td>
-            <td><input type="radio" name="r7" value=""></td>
-            <td><input type="radio" name="r7" value=""></td>
-            <td><input type="radio" name="r7" value=""></td>
+            <td><input type="radio" name="r8" value=""></td>
+            <td><input type="radio" name="r8" value=""></td>
+            <td><input type="radio" name="r8" value=""></td>
+            <td><input type="radio" name="r8" value=""></td>
+            <td><input type="radio" name="r8" value=""></td>
           </tr>
           <tr>
             <td class="q">선생님과 학생 간의 소통이 잘 이루어졌다.</td>
-            <td><input type="radio" name="r8" value=""></td>
-            <td><input type="radio" name="r8" value=""></td>
-            <td><input type="radio" name="r8" value=""></td>
-            <td><input type="radio" name="r8" value=""></td>
-            <td><input type="radio" name="r8" value=""></td>
+            <td><input type="radio" name="r9" value=""></td>
+            <td><input type="radio" name="r9" value=""></td>
+            <td><input type="radio" name="r9" value=""></td>
+            <td><input type="radio" name="r9" value=""></td>
+            <td><input type="radio" name="r9" value=""></td>
           </tr>
         </table>
         <br><br>
@@ -102,27 +128,27 @@
           </tr>
           <tr>
             <td class="q">모든 프로그램을 결석 없이 참여했다.</td>
-            <td><input type="radio" name="r9" value=""></td>
-            <td><input type="radio" name="r9" value=""></td>
-            <td><input type="radio" name="r9" value=""></td>
-            <td><input type="radio" name="r9" value=""></td>
-            <td><input type="radio" name="r9" value=""></td>
+            <td><input type="radio" name="r10" value=""></td>
+            <td><input type="radio" name="r10" value=""></td>
+            <td><input type="radio" name="r10" value=""></td>
+            <td><input type="radio" name="r10" value=""></td>
+            <td><input type="radio" name="r10" value=""></td>
           </tr>
           <tr>
             <td class="q">모든 과제를 성실하게 제출했다.</td>
-            <td><input type="radio" name="r10" value=""></td>
-            <td><input type="radio" name="r10" value=""></td>
-            <td><input type="radio" name="r10" value=""></td>
-            <td><input type="radio" name="r10" value=""></td>
-            <td><input type="radio" name="r10" value=""></td>
+            <td><input type="radio" name="r11" value=""></td>
+            <td><input type="radio" name="r11" value=""></td>
+            <td><input type="radio" name="r11" value=""></td>
+            <td><input type="radio" name="r11" value=""></td>
+            <td><input type="radio" name="r11" value=""></td>
           </tr>
           <tr>
             <td class="q">프로그램을 통해 자신의 포트폴리오를 만들었다.</td>
-            <td><input type="radio" name="r11" value=""></td>
-            <td><input type="radio" name="r11" value=""></td>
-            <td><input type="radio" name="r11" value=""></td>
-            <td><input type="radio" name="r11" value=""></td>
-            <td><input type="radio" name="r11" value=""></td>
+            <td><input type="radio" name="r12" value=""></td>
+            <td><input type="radio" name="r12" value=""></td>
+            <td><input type="radio" name="r12" value=""></td>
+            <td><input type="radio" name="r12" value=""></td>
+            <td><input type="radio" name="r12" value=""></td>
           </tr>
         </table>
         <br><br>
@@ -132,7 +158,7 @@
       </div>
     </section>
     <footer style="text-align: center; margin-top: 20px">
-      <a href="end.html"><input type="button" name="" value="제출" class="btn"></a>
+      <a href="javascript:submit()"><input type="button" name="" value="제출" class="btn"></a>
       <br><br><br><br>
     </footer>
   </body>
